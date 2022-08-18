@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lorkin Consulting</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon3.png"/>
+    
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.6.2/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.6.2/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.6.2/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.6.2/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.6.2/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.6.2/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.6.2/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.6.2/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.6.2/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.6.2/firebase-performance-compat.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="../style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <!-- Bootstrap Font Icon CSS -->
+     <link rel="stylesheet" href=
+     "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <!--
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    -->
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  </head>
+
+
+
+
+
+  <body>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+    <div class="navbar">
+      <ul class="navbar-container">
+        <li class="nav-item"><a href="#section-3" class="left-underline nav-button" data-scroll>Contact</a></li>
+        <li class="nav-item"><a href="#section-2" class="left-underline nav-button" data-scroll>Services</a></li>
+        <li class="nav-item active"><a href="#section-1" class="left-underline nav-button" data-scroll>About</a></li>
+      </ul>
+    </div>
+    
+    <div class="container">
+    <div class="parallax p1" id="section-1">
+      <img class="img-fluid logo" src="images/logo10.png">
+    </div>
+
+    <div class="row align-items-center">
+        <h1>Welcome. </h1>
+        <p>Lorkin Consulting provides full stack engineering consultancy. Specialising in new products and start-ups 
+          we will help get your product off the ground. From idea to execution.</p>
+        <p>We offer extremely competitive pricing, perfect for small to medium companies looking to create new products.</p>
+        <p></p>
+        <p></p>
+    </div>
+
+    <div class="row align-items-center" id="section-2">
+      <h1>Previous Projects</h1>
+      <p></p>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">      
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="images/slides/raptor2.png" alt="First slide">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50"> <!--DESKTOP-->
+            <h5>Raptor Module</h5>
+            <p>A drone mounted module for search and rescue, and law enforcement applications</p>
+            <p>Developed in collaboration with CrimeScan Research Solutions</p>
+          </div>
+          <div class="carousel-caption d-block d-md-none bg-dark bg-opacity-50"> <!--MOBILE-->
+            <h5>Raptor Module</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/slides/cleaner.png" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50"> <!--DESKTOP-->
+            <h5>Automatic Solar Panel Cleaner</h5>
+            <p>A robotic automated solar panel cleaner, the first to be produced in Australia.</p>
+            <p>Developed in collaboration with Innovative Energy Solutions</p>
+          </div>
+          <div class="carousel-caption d-block d-md-none bg-dark bg-opacity-50"> <!--MOBILE-->
+            <h5>Automatic Solar Panel Cleaner</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/slides/SMSAlert.png" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50"> <!--DESKTOP-->
+            <h5>SMS and GPS Alert System</h5>
+            <p>An IP65 SMS Alert System, texts user when boat has taken on too much water.</p>
+            <p>Also tracks GPS coordinates for security.</p>
+          </div>
+          <div class="carousel-caption d-block d-md-none bg-dark bg-opacity-50"> <!--MOBILE-->
+            <h5>SMS and GPS Alert System</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/slides/wheelchair.png" alt="Fourth slide">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50"> <!--DESKTOP-->
+            <h5>Omnidirectional Wheelchair</h5>
+            <p>An omni wheelchair with 360 degrees of movement, for disability assistance.</p>
+            <p>Devloped in collaboration with Dr. Thomas Braunl of UWA</p>
+          </div>
+          <div class="carousel-caption d-block d-md-none bg-dark bg-opacity-50"> <!--MOBILE-->
+            <h5>Omnidirectional Wheelchair</h5>
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <img class="d-block w-100" src="images/slides/eyebot.png" alt="Fifth slide">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50"> <!--DESKTOP-->
+            <h5>Eyebot IO Shield</h5>
+            <p>An all-in-one robotics shield for the Raspberry Pi.</p>
+            <p>Devloped as lab bots for the University of Western Australia</p>
+          </div>
+          <div class="carousel-caption d-block d-md-none bg-dark bg-opacity-50"> <!--MOBILE-->
+            <h5>Eyebot IO Shield</h5>
+          </div>
+          
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+       <!-- <span class="carousel-control-prev-icon bg-dark bg-opacity-25" aria-hidden="true"></span> -->
+       <i class="fa-solid fa-3x fa-chevron-left" aria-hidden="true"></i>
+       <!-- <span class="sr-only bg-dark bg-opacity-25">previous</span> -->
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <!-- <span class="sr-only bg-dark bg-opacity-25">next</span> -->
+        <i class="fa-solid fa-3x fa-chevron-right" aria-hidden="true"></i>
+        <!-- <span class="carousel-control-next-icon bg-dark bg-opacity-25" aria-hidden="true"></span> -->
+      </a>
+    </div>
+
+    <div class="row">
+      <p></p>
+      <p></p>
+      <h1>Services and Skills</h1>
+      <div class="col">
+        <p>• Embedded Systems Programming</p> 
+      </div>
+      <div class="col">
+        <p>• 3D Design</p>
+      </div>
+      <div class="col">
+        <p>• Electrical Consultancy</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <p>• Circuit Board Design and Fabrication </p>
+      </div>
+      <div class="col">
+        <p>• Robotics and Automation  </p>
+      </div>
+      <div class="col">
+        <p>• Patent Applications </p>
+      </div>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+    </div>
+
+    </div>
+    <div class="parallax p3" id="section-3">
+      <hgroup>
+        <h1>Contact Me</h1>
+        <h2>Jake Lorkin</h2>
+        <h2>
+          <a href="mailto:jake@lorkin.cc">✉ jake@lorkin.cc</a>
+        </h2>
+        <h2>
+          <a href="tel:+610404201000">
+            ☏ (+61) 0404 201 000
+          </a>
+        </h2>
+        <h2>
+          <a href="https://www.linkedin.com/in/jake-lorkin/" target="_blank">
+            <i class="bi bi-clipboard-data"></i>
+            linkedin.com/in/jake-lorkin/
+          </a>
+        </h2>
+        <!--<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="jake-lorkin" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://au.linkedin.com/in/jake-lorkin?trk=profile-badge"></a></div>       
+        -->
+        </hgroup>  
+    </div>
+    
+
+    <footer>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2022 Lorkin Consulting, All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
+</html>
